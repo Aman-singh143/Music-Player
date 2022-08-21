@@ -11,9 +11,9 @@
 <br/>⇒ Onclicking next and previos button it also generates random gradient background and obviously change music
 <br/>⇒ Next Song will automatic start after end of current song.
 <br/>⇒ Responsive
-
-######For Live Demo : https://aman-singh143.github.io/Music-Player/
-
-Screenshots 
+<br/>
+**For Live Demo :** https://aman-singh143.github.io/Music-Player/
+<br/>
+**Screenshots **
 ![image](https://user-images.githubusercontent.com/109282041/185785554-d5dac3b7-49c5-45ed-8a05-69d3aa46d149.png)
 ![image](https://user-images.githubusercontent.com/109282041/185785590-84b5e9c8-c0de-4dbd-982d-9ab2a9211554.png)
