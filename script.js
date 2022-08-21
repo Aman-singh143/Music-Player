@@ -137,8 +137,9 @@ music.addEventListener("timeupdate", (event) => {
   //current time of song
   let cmin = Math.floor(currentTime / 60);
   let csec = Math.floor(currentTime % 60);
+  
   if (currentTime) {
-    Current_time.textContent = `${cmin}:0${csec}`;
+    Current_time.textContent = `${cmin}:${csec}`;
   }
 
   ////Total duration time of song
