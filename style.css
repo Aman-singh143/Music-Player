@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=DynaPuff:wght@500&family=IBM+Plex+Sans:wght@100&family=Josefin+Sans:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(22deg, rgb(193, 43, 43), rgb(201 163 33));
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  flex-direction: column;
+}
+#sn {
+  font-size: 1.4rem;
+  font-family: "DynaPuff", cursive;
+  font-weight: 550;
+}
+#an {
+  font-family: "Comfortaa";
+  font-size: 0.9rem;
+  margin: 0.2rem 0rem 0.8rem 0rem;
+  font-weight: 800;
+}
+.container {
+  width: 25rem;
+  position: relative;
+  height: 38rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 2.2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #ffffff4a;
+}
+.container img {
+  border-radius: 0.6rem;
+  filter: none;
+  opacity: 0.95;
+  width: 19rem;
+  height: 19rem;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0px 0rem 12px 1px rgba(0, 0, 0, 0.565);
+}
+.controls .fa-solid {
+  color: #111111;
+  font-size: 1.6rem;
+  cursor: pointer;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.4rem 0 1.4rem;
+}
+.controls .main-button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #111;
+  color: #f6f6f6;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls #Prev:hover,
+#Next:hover {
+  color: rgb(227, 222, 222);
+}
+
+.controls .main-button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 1rem 1.2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+.progress {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+.pg-meter {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem 0.5rem 0 0.5rem;
+}
+.pgbar {
+  position: relative;
+  height: 0.5rem;
+  background: rgba(255, 255, 255, 0.439);
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+  /* box-shadow:0 0em 2px 0rem rgb(0 0 0 / 40%); */
+}
+.pgbar > .pg {
+  position: absolute;
+  width: 0%;
+  height: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4rem;
+  transition: all is linear;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.currenttime,
+.duration {
+  font-family: "Comfortaa";
+  font-size: 0.89rem;
+  margin-top: 0.5rem;
+  font-weight: 900;
+  color: #373434;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 21rem;
+    height: 35.5rem;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39rem;
+  }
+  .container img {
+    width: 17rem;
+    height: 17rem;
+  }
+  #sn {
+    font-size: 1.3rem;
+  }
+}
